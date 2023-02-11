@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+header {
+  background: url(../image/bg.png) no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 1px;
+  min-height: 220px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+header h1 {
+  color: #fff;
+  font-weight: 500;
+  margin: 1rem;
+}
+header form {
+  width: 480px;
+  margin: 0 auto;
+}
+header form input {
+  width: 90%;
+  border: none;
+  padding: 15px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+header form button {
+  width: 10%;
+  border: none;
+  padding: 15px;
+  background: #000;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.info {
+  position: relative;
+  border-radius: 10px;
+  background: #fff;
+  width: 90%;
+  padding: 2.3rem;
+  margin: 0 auto;
+  display: flex;
+  transform: translateY(20px);
+  z-index: 999;
+  justify-content: space-between;
+  box-shadow: 0 3px 32px 0 rgb(0 0 0 / 27%);
+  text-align: center;
+}
+.info div {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.info .line {
+  border-top: 1px solid #969696;
+  width: 90px;
+  transform: rotate(90deg);
+  position: relative;
+  right: 3rem;
+}
+.info p {
+  text-transform: uppercase;
+  opacity: 0.6;
+  font-size: 12px;
+  font-weight: bold;
+}
+.info h3 {
+  color: #2b2b2b;
+  font-weight: bold;
+}
+#map {
+  height: calc(100vh - 260px);
+}
+
+@media screen and (max-width: 644px) {
+  header form {
+    width: 90%;
+  }
+  header form input {
+    width: 80%;
+  }
+  header form button {
+    width: 10%;
+  }
+  .info {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .info .line {
+    display: none;
+  }
+}
+@media screen and (min-width: 645px) and (max-width: 804px) {
+}
+@media screen and (min-width: 805px) and (max-width: 1030px) {
+  .info {
+    width: 800px;
+  }
+}
